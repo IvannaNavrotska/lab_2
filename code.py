@@ -15,18 +15,20 @@ def main():
 
         if not line.strip():
             sys.stderr.write("Error: Wait, enter somethig.\n")
-            continue
-        
+            sys.exit(1)
+
         try:
             n = int(line)
         except ValueError:
             sys.stderr.write("Error: Input must be an integer.\n")
-            continue
+            sys.exit(1)
         
         result = fibonacci(n)
         
         if result is not None:
             sys.stdout.write(str(result) + '\n')
+    
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()
