@@ -26,7 +26,7 @@ def main():
         try:
             n = int(line)
         except ValueError:
-            sys.stderr.write("Error: Forget about letters! Input must be an integer \n")
+            sys.stderr.write("Error: Forgot about letters! Input must be an integer \n")
             sys.exit(1)
         
         result = fibonacci(n)
