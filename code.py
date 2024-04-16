@@ -13,6 +13,10 @@ def main():
     
     for line in sys.stdin:
 
+        if not line.strip():
+            sys.stderr.write("Error: Wait, enter somethig.\n")
+            continue
+        
         try:
             n = int(line)
         except ValueError:
