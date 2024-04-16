@@ -54,8 +54,8 @@ class TestCode(unittest.TestCase):
     
     def test_main_with_errors(self):
         test_cases = [
-            ("six\n", "Error: Input must be an integer \n"),
-            (" ", "Error: Wait, enter somethig! \n") ]
+            ("six\n", "Error: Forgot about letters! Input must be an integer \n"),
+            (" ", "Error: Wait, your input cannot be empty! \n") ]
 
         for input_data, expected_error_message in test_cases:
             sys.stdin = io.StringIO(input_data)
