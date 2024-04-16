@@ -3,7 +3,7 @@ import sys
 sys.stdout.write('There is what you should know if you wanna find fibonacci:\n'
                  'to have something, you have to give somethig\n'
                  'letters are cool, but not here\n'
-                 "we all love nagative integers, but fibonacci doesn't\n"
+                 "we all love negative integers, but fibonacci doesn't\n"
                  'Now you can enter you integers :) \n')
 
 def fibonacci(f):
