@@ -8,7 +8,7 @@ sys.stdout.write('There is what you should know if you wanna find fibonacci:\n'
 
 def fibonacci(f):
     if type(f) != int or f < 0:
-        sys.stderr.write("Error: Input must be a non-negative integer.\n")
+        sys.stderr.write("Error: You know, input must be a non-negative integer \n")
         return None
     elif f == 0 or f == 1:
         return 1
@@ -20,13 +20,13 @@ def main():
     for line in sys.stdin:
 
         if not line.strip():
-            sys.stderr.write("Error: Wait, enter somethig.\n")
+            sys.stderr.write("Error: Wait, your input cannot be empty! \n")
             sys.exit(1)
 
         try:
             n = int(line)
         except ValueError:
-            sys.stderr.write("Error: Input must be an integer.\n")
+            sys.stderr.write("Error: Forget about letters! Input must be an integer \n")
             sys.exit(1)
         
         result = fibonacci(n)
