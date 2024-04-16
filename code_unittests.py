@@ -22,6 +22,7 @@ class TestCode(unittest.TestCase):
         
         self.assertFalse(code.fibonacci('five'))  
         self.assertFalse(code.fibonacci(-5))
+        self.assertFalse(code.fibonacci(' '))
 
 if __name__ == '__main__':
     unittest.main()
